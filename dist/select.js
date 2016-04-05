@@ -762,7 +762,6 @@ uis.controller('uiSelectCtrl',
     }
 
     if(~[KEY.ESC,KEY.TAB].indexOf(key)){
-        //TODO: SEGURO?
         if(ctrl.items.length <= 0) {
             ctrl.close();
         }
