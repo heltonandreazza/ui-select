@@ -762,6 +762,7 @@ uis.controller('uiSelectCtrl',
     }
 
     if(~[KEY.ESC,KEY.TAB].indexOf(key)){
+        //
         if(ctrl.items.length <= 0) {
             ctrl.close();
         }
