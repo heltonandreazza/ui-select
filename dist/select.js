@@ -759,13 +759,9 @@ uis.controller('uiSelectCtrl',
     if (~[KEY.ENTER,KEY.ESC].indexOf(key)){
       e.preventDefault();
       e.stopPropagation();
-    }
-
-    if(~[KEY.ESC,KEY.TAB].indexOf(key)){
-        //
-        if(ctrl.items.length <= 0) {
-            ctrl.close();
-        }
+      if(ctrl.items.length <= 0) {
+          ctrl.close();
+      }
     }
 
     $scope.$apply(function() {
