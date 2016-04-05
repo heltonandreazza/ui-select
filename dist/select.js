@@ -761,10 +761,11 @@ uis.controller('uiSelectCtrl',
       e.stopPropagation();
     }
 
-    if (~[KEY.TAB].indexOf(key)){
-      if(ctrl.items.length <= 0) {
+    if(~[KEY.ESC,KEY.TAB].indexOf(key)){
+       //TODO: SEGURO?
+       if(ctrl.items.length <= 0) {
           ctrl.close();
-      }
+       }
     }
 
     $scope.$apply(function() {
